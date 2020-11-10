@@ -2,12 +2,20 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import CustomButton from "../shared/CustomButton";
 import StoreBadge from "../shared/StoreBadge";
-const useStyles = makeStyles(theme => ({}));
+import Header from './components/header';
+import BlogPost from "./components/BlogPost";
+
+const useStyles = makeStyles(theme => ({
+  
+}));
 const Home = props => {
   const classes = useStyles();
   return (
     <div>
+     <Header></Header>
       <h2>Campaigns</h2>
+      <BlogPost>
+      </BlogPost>
       <CustomButton
         width="60%"
         backgroundColor="black"
@@ -16,6 +24,7 @@ const Home = props => {
       ></CustomButton>
       {/* <StoreBadge type={"apple"}></StoreBadge>
       <StoreBadge type={"google"}></StoreBadge> */}
+    
     </div>
   );
 };

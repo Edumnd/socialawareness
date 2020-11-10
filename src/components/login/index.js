@@ -38,7 +38,7 @@ const Login = () => {
     <div className={classes.container}>
       <div className={classes.form}>
         <p className={classes.title}>Login Page</p>
-        <Link to="/">
+        <Link to="/home">
           <CustomButton
             color="dark"
             title="Login"

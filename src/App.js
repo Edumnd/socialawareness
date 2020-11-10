@@ -7,14 +7,16 @@ import {
   Redirect,
   Switch
 } from "react-router-dom";
+
 import thisislogin from "./components/login";
-import Home from "./components/home";
+import Home from "./components/home/index";
+
 function App() {
   return (
     <Router>
       <Switch>
         <Route path="/login" exact component={thisislogin}></Route>
-        <Route path="/" exact component={Home}></Route>
+        <Route path="/home" exact component={Home}></Route>
         <Redirect to="/login" />
       </Switch>
     </Router>
